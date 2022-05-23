@@ -1,16 +1,24 @@
 # todo_app
 
-A new Flutter project.
+<p align="center">
+<p>
+    <img width="200" heigth="100" src="https://raw.githubusercontent.com/flutter/website/master/src/_assets/image/flutter-lockup.png">
+</p>
+</p>
+<p align="center">
 
-## Getting Started
+## list annotation crud
 
-This project is a starting point for a Flutter application.
+# Como usar
 
-A few resources to get you started if this is your first Flutter project:
+	```  - Clone this repository:
+	``` $ git clone [https://github.com/JhonataCustodio/eLocation-crud-app.git](https://github.com/JhonataCustodio/list-annotation-crud)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+	``` - Enter in directory:
+	``` $ cd todo_app
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+	``` - For install dependencies:
+	``` $ flutter pub get
+
+	``` - Run the app: 
+	``` $ flutter run
