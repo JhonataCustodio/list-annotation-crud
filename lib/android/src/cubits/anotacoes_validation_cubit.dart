@@ -6,7 +6,7 @@ part 'anotacoes_validation_state.dart';
 class AnotacoesValidationCubit extends Cubit<AnotacoesValidationState> {
   AnotacoesValidationCubit() : super(const AnotacoesValidating());
 
-  //validar formulario de edicao da nota
+  
   void validaForm(String titulo, String descricao, String status) {
     String cubitTituloMessage = '';
     String cubitDescricaoMessage = '';

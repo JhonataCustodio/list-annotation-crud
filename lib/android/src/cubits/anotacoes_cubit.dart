@@ -8,10 +8,10 @@ class AnotacoesCubit extends Cubit<AnotacoesState> {
       : _dbActivityNotes = dbActivityNotes,
         super(const AnotacoesInitial());
 
-  //instancia do banco de dados sqlite
+  
   final DbActivityNotes _dbActivityNotes;
 
-  //buscar todas as anotacoes
+  
   Future<void> buscarAnotacoes() async {
     emit(const AnotacoesLoading());
     try {
@@ -25,7 +25,7 @@ class AnotacoesCubit extends Cubit<AnotacoesState> {
     }
   }
 
-  //excluir nota atraves um id
+  
   Future<void> excluirAnotacoes(id) async {
     emit(const AnotacoesLoading());
 
@@ -39,7 +39,7 @@ class AnotacoesCubit extends Cubit<AnotacoesState> {
     }
   }
 
-  //salvar anotacoes
+  
   Future<void> salvarAnotacoes(int? id, String titulo, String descricao, String status) async {
     ActivityNotes editAnotacoes = ActivityNotes(id: id, titulo: titulo, descricao: descricao, status: status);
     emit(const AnotacoesLoading());
@@ -55,7 +55,7 @@ class AnotacoesCubit extends Cubit<AnotacoesState> {
         print('update realizado');
       }
       emit(const AnotacoesSuccess());
-      // buscarAnotações();
+ 
     } on Exception {
       emit(const AnotacoesFailure());
     }
